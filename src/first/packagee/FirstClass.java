@@ -10,7 +10,7 @@ public class FirstClass {
 				"C:\\Users\\91992\\OneDrive\\Desktop\\chromedriver_win32 (1)\\chromedriver.exe");
 		
 		System.setProperty("webdriver.edge.driver", "C:\\Users\\91992\\OneDrive\\Desktop\\edgedriver_win64 (2)\\msedgedriver.exe");
-		
+
 		ChromeDriver driver = new ChromeDriver();
 		
 		EdgeDriver dri = new EdgeDriver();

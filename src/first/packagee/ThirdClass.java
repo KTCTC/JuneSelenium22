@@ -15,30 +15,25 @@ public class ThirdClass {
 				"C:\\Users\\91992\\OneDrive\\Desktop\\edgedriver_win64 (2)\\msedgedriver.exe");
 
 		ChromeDriver driver = new ChromeDriver();
-
+		//EdgeDriver driver = new EdgeDriver();
 		driver.get("https://www.facebook.com/");
 
-		//By em = By.id("email");
+		// By em = By.id("email");
 
-		//WebElement emailTextBox = driver.findElement(By.id("email"));
+		// WebElement emailTextBox = driver.findElement(By.id("email"));
 
-		//emailTextBox.sendKeys("Welcome to KTCTC");
+		// emailTextBox.sendKeys("Welcome to KTCTC");
 		driver.findElement(By.id("email")).sendKeys("Welcome to KTCTC");
 		driver.findElement(By.id("email")).sendKeys("Welcome to KTCTC");
 
-		//By ps = By.name("pass");
-		
+		// By ps = By.name("pass");
+
 		WebElement passTestBox = driver.findElement(By.name("pass"));
-		
+
 		passTestBox.sendKeys("KT12345");
 		passTestBox.sendKeys("Sample");
-		
-		
-		
-	 driver.findElement(By.name("login")).click();
-	 
-	
-	
+
+		driver.findElement(By.name("login")).click();
 
 	}
 
