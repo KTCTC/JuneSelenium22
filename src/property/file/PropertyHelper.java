@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class PropertyHelper {
-	Properties prop;
+	private Properties prop;
 	
 	public PropertyHelper(String fileName) {
 		try {
