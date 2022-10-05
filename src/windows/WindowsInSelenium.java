@@ -26,6 +26,9 @@ public class WindowsInSelenium {
 		
 		Set<String> allHandles = driver.getWindowHandles();
 		
+		
+		
+		
 		for (String each:allHandles)
 		{
 			
@@ -47,5 +50,22 @@ public class WindowsInSelenium {
 		
 
 	}
+	
+	 public static void switchToRequiredWindow(WebDriver driver, int windowNum)
+	 {
+		 int i=1;
+		 Set<String> allHandles = driver.getWindowHandles();
+			for (String each:allHandles)
+			{
+				
+				if (i==windowNum)
+				{
+					driver.switchTo().window(each);
+				}
+				i++;
+				
+			}
+	 }
+	
 
 }
